@@ -156,6 +156,38 @@ html {
   transform: scale(1.1); /* Zoom-in effect on hover */
 }
 
+/* Expertise Section */
+.expertise {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.expertise h2 {
+  color: #16a7fa; /* Setting the color */
+  font-size: 2rem; /* Adjust font size */
+  text-align: center; /* Center the text */
+  position: relative;
+}
+
+.expertise h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #16a7fa; /* Same color as the text */
+  transform: scaleX(1);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.expertise h2:hover::after {
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
+
 /* Tech container */
 .tech-container {
   display: flex;
@@ -232,5 +264,104 @@ html {
   /* Tech container: Adjust padding and layout */
   .tech-container {
       padding: 20px;
+  }
+}
+
+
+/* Work Section */
+.work {
+  text-align: center;
+  padding: 50px;
+}
+
+.work h2 {
+  color: #16a7fa;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Portfolio Item Style */
+.portfolio-item {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Portfolio Info Section */
+.portfolio-info {
+  text-align: center;
+}
+
+.portfolio-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.portfolio-info p {
+  color: grey;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.portfolio-info .btn {
+  background-color: #16a7fa;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-info .btn:hover {
+  background-color: #000000;
+}
+
+/* Portfolio Images Section */
+.portfolio-images {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .work h2 {
+      font-size: 2rem;
+  }
+
+  .portfolio-item {
+      padding: 15px;
+  }
+
+  .portfolio-info p {
+      font-size: 0.9rem;
+  }
+
+  .portfolio-images {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .portfolio-img {
+      max-width: 100%;
   }
 }
