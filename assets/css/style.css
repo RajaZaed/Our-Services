@@ -365,3 +365,28 @@ html {
       max-width: 100%;
   }
 }
+/* other work */
+
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn {
+  background-color: #16a7fa; /* Blue background */
+  color: white; /* White text */
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #000000; /* Darker on hover */
+}
