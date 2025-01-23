@@ -302,6 +302,8 @@ html {
   margin-bottom: 10px;
 }
 
+
+
 .portfolio-info p {
   color: grey;
   font-size: 1rem;
@@ -389,4 +391,402 @@ html {
 
 .btn:hover {
   background-color: #000000; /* Darker on hover */
+}
+
+
+/* Services Section Styling */
+.services {
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services li {
+  background-color: #16a7fa;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  width: 250px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.services li:hover {
+  background-color: #0a7fc9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .services h2 {
+      font-size: 1.5rem;
+  }
+
+  .services li {
+      width: 45%;
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services h2 {
+      font-size: 1.2rem;
+  }
+
+  .services li {
+      width: 90%;
+      font-size: 0.9rem;
+  }
+}
+
+
+/* Testimonials Section Styling */
+.testimonials {
+  text-align: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #16a7fa;
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.testimonial h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonial p:last-child {
+  font-style: italic;
+  color: #777;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .testimonials h2 {
+      font-size: 1.5rem;
+  }
+
+  .testimonial {
+      width: 80%;
+      margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials h2 {
+      font-size: 1.3rem;
+  }
+
+  .testimonial {
+      width: 90%;
+      margin: 10px auto;
+  }
+}
+/* Contact Section Styling */
+.contact {
+  text-align: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #16a7fa;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact button {
+  background-color: #16a7fa;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact button:hover {
+  background-color: #138bb1;
+}
+
+/* Call-to-Action (CTA) Section Styling */
+.cta {
+  background-color: #16a7fa;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #138bb1;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background-color: #f7f7f7;
+}
+
+/* Footer Section Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container p {
+  margin-bottom: 10px;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-container ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-container ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer-container ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact h2 {
+      font-size: 1.5rem;
+  }
+
+  .contact p {
+      font-size: 1rem;
+  }
+
+  .contact form {
+      width: 90%;
+  }
+
+  .cta h2 {
+      font-size: 1.5rem;
+  }
+
+  .cta-btn {
+      font-size: 1.1rem;
+      padding: 12px 24px;
+  }
+
+  .footer-container p {
+      font-size: 1rem;
+  }
+
+  .footer-container ul li a {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact h2 {
+      font-size: 1.3rem;
+  }
+
+  .contact button {
+      font-size: 1rem;
+      padding: 8px 16px;
+  }
+
+  .cta h2 {
+      font-size: 1.2rem;
+  }
+
+  .cta-btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+  }
+
+  .footer-container ul li {
+      display: block;
+      margin: 5px 0;
+  }
+
+  .footer-container ul li a {
+      font-size: 1rem;
+  }
+}
+
+
+.what-i-do {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.what-i-do h2 {
+  color: #16a7fa;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.what-i-do p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.service-item {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item h3 {
+  color: #16a7fa;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 768px) {
+  .services-list {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services-list {
+      grid-template-columns: 1fr;
+  }
+}
+/* WhatsApp Button Styles */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom */
+  right: 20px;  /* Adjust the distance from the right */
+  z-index: 1000; /* Ensure it stays above other content */
+  background-color: #25D366; /* WhatsApp Green */
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn img {
+  width: 60px; /* Adjust size of the icon */
+  height: 60px; /* Adjust size of the icon */
+  display: block;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1); /* Slight zoom effect when hovering */
 }
